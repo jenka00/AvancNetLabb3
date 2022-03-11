@@ -20,7 +20,7 @@ namespace AvancNetLabb3
             this.CarSpeed = 120;
             this.TravledDistance = 0;
             this.Time = 0;
-            this.TrackLenght = 2;
+            this.TrackLenght = 10;
         }
 
         public void Refuel()
@@ -28,21 +28,21 @@ namespace AvancNetLabb3
             Console.WriteLine($"\n{Thread.CurrentThread.Name} har fått slut på bensin.");
             Console.WriteLine($"{Thread.CurrentThread.Name} tankar...........");
             Thread.Sleep(30000);
-            Console.WriteLine($"\n{Thread.CurrentThread.Name} har tankat färdigt. Fortsätter köra");
+            Console.WriteLine($"\n{Thread.CurrentThread.Name} har tankat färdigt. Fortsätter köra.");
         }
         public void Puncture()
         {
             Console.WriteLine($"\n{Thread.CurrentThread.Name} har fått punktering.");
             Console.WriteLine($"{Thread.CurrentThread.Name} byter däck.........");
             Thread.Sleep(20000);
-            Console.WriteLine($"\n{Thread.CurrentThread.Name} är färdig med däckbytet. Fortsätter köra");
+            Console.WriteLine($"\n{Thread.CurrentThread.Name} är färdig med däckbytet. Fortsätter köra.");
         }
         public void BirdOnWindow()
         {
             Console.WriteLine($"\n{Thread.CurrentThread.Name} har krockat med en fågel.");
             Console.WriteLine($"{Thread.CurrentThread.Name} rengör vindrutan.........");
             Thread.Sleep(10000);
-            Console.WriteLine($"\n{Thread.CurrentThread.Name}'s vindruta är ren igen. Fortsätter köra");
+            Console.WriteLine($"\n{Thread.CurrentThread.Name}'s vindruta är ren igen. Fortsätter köra.");
         }
         public double EngineBreakDown()
         {
@@ -67,7 +67,7 @@ namespace AvancNetLabb3
 
         public void RandomMethod()
         {
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < 30; i++)
             {
                 Thread.Sleep(1000);
                 this.Time += 1000;
